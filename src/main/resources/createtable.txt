@@ -5,14 +5,23 @@ create table course (
         name varchar(255) not null,
         primary key (id)
     );
+    
+    create table employee (
+        id bigint not null AUTO_INCREMENT,
+        name varchar(255) not null,       
+       salary decimal(19,2),
+        hourly_wage decimal(19,2),
+        employee_type varchar(50) not null,
+        primary key (id)
+    );
     create table full_time_employee (
-       id bigint not null,
+       id bigint not null AUTO_INCREMENT,
         name varchar(255) not null,
         salary decimal(19,2),
         primary key (id)
     );
     create table part_time_employee (
-       id bigint not null,
+       id bigint not null AUTO_INCREMENT,
         name varchar(255) not null,
         hourly_wage decimal(19,2),
         primary key (id)
@@ -31,9 +40,6 @@ create table course (
     );
     create table student (
        id bigint not null,
-        city varchar(255),
-        line1 varchar(255),
-        line2 varchar(255),
         name varchar(255) not null,
         passport_id bigint,
         primary key (id)
