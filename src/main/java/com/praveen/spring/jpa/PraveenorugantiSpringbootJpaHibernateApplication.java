@@ -45,8 +45,8 @@ private Logger log = LoggerFactory.getLogger(this.getClass());
 //		reviews.add(new Review("Excellent Course","FIVE"));
 //		courseRepository.addReviewsForCourse(10004L, reviews);
 		
-		employeeRepository.insert(new FullTimeEmployee("Praveen", new BigDecimal("100000")));
-		employeeRepository.insert(new PartTimeEmployee("Naveen", new BigDecimal("50")));	
+//		employeeRepository.insert(new FullTimeEmployee("Praveen", new BigDecimal("100000")));
+//		employeeRepository.insert(new PartTimeEmployee("Naveen", new BigDecimal("50")));	
 		
 		//log.info("PartTime Employees {}"+employeeRepository.retrievePartTimeEmployees());
     	//log.info("FullTime Employees {}"+employeeRepository.retrieveFullTimeEmployees());
